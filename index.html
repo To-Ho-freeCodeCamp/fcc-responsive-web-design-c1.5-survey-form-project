@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaming Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Gaming Survey Form</h1>
+        <p id="description">Thank you for taking this survey about your gaming experience</p>
+      </header>
+      <form id="survey-form">
+        <!-- user input -->
+        <div class="form-group">
+          <label id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required /></label>  
+        </div>
+        <div class="form-group">
+          <label id="email-label">Email <input id="email" type="email" placeholder="Enter your email" required /></label>  
+        </div>
+        <div class="form-group">
+          <label id="number-label">Age (optional)  <input id="number" type="number" min="5" max="120" placeholder="Enter your age" /></label>  
+        </div>
+        <!-- dropdown selection -->
+        <div class="form-group">
+          <p>How many hours per week do you play video games?</p>
+          <select id="dropdown" name="gaming-hours">
+            <option disable selected value>Select one</option>
+            <option value="relax">Less than 10 hours</option>
+            <option value="casual">10-19 hours</option>
+            <option value="gamer">20-29 hours</option>
+            <option value="full-time-job">30-39 hours</option>
+            <option value="professional">More than 40 hours</option>
+          </select>  
+        </div>
+        <!-- radio slection -->
+        <div class="form-group">
+          <p>When do you usually purchase a game?</p>
+          <label><input name="game-purchase-time" class="input-radio" type="radio" value="on-release" /> On release</label>
+          <label><input name="game-purchase-time" class="input-radio" type="radio" value="after-patches" /> After patches/fixes</label>
+          <label><input name="game-purchase-time" class="input-radio" type="radio" value="on-sale" /> On sale</label>
+        </div>
+        <!-- checkbox selection 1 -->
+        <div class="form-group">
+          <p>What devices are you gaming on?</p>
+          <label>
+            <input name="gaming-device" value="pc" type="checkbox" class="input-checkbox" />
+            PC
+          </label>
+          <label>
+            <input name="gaming-device" value="consoles" type="checkbox" class="input-checkbox" />
+            Consoles (PS, XBOX, etc.)
+          </label>
+          <label>
+            <input name="gaming-device" value="portable-consoles" type="checkbox" class="input-checkbox" />
+            Portable Consoles (Switch, PSP, etc.)
+          </label>
+          <label>
+            <input name="gaming-device" value="mobile" type="checkbox" class="input-checkbox" />
+            Phone/Tablet
+          </label>
+          <label>
+            <input name="gaming-device" value="cloud" type="checkbox" class="input-checkbox" />
+            Cloud
+          </label>
+        </div>
+        <!-- checkbox selection 2 -->
+        <div class="form-group">
+          <p>What are your favourite game genres?</p>
+          <label><input name="gaming-genre" value="fps" type="checkbox" class="input-checkbox" />
+          FPS
+          </label>
+          <label><input name="gaming-genre" value="tps" type="checkbox" class="input-checkbox" />
+          TPS
+          </label>
+          <label><input name="gaming-genre" value="rts" type="checkbox" class="input-checkbox" />
+          RTS
+          </label>
+          <label><input name="gaming-genre" value="grand-strategy" type="checkbox" class="input-checkbox" />
+          Grand Strategy
+          </label>
+          <label><input name="gaming-genre" value="simulation" type="checkbox" class="input-checkbox" />
+          Simulation
+          </label>
+          <label><input name="gaming-genre" value="rpg" type="checkbox" class="input-checkbox" />
+          RPG
+          </label>
+          <label><input name="gaming-genre" value="mmorpg" type="checkbox" class="input-checkbox" />
+          MMORPG
+          </label>
+          <label><input name="gaming-genre" value="others" type="checkbox" class="input-checkbox" />
+          Others
+          </label>
+        </div>
+        <!-- textarea -->
+        <div class="form-group">
+          <p>Please list some of your favourite games: </p>
+          <textarea id="game-list" rows="4" cols="30" placeholder="game1, game2, game3, ..." /></textarea>
+        </div>
+        <!-- submit -->
+        <div class="form-group">
+          <input type="submit" id="submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
